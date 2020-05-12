@@ -12,26 +12,6 @@
       <VlLayerTile>
         <VlSourceOsm />
       </VlLayerTile>
-
-      <VlLayerGraticule :show-labels="true">
-        <VlStyleStroke
-          slot="stroke"
-          color="rgba(255,120,0,0.9)"
-          :width="2"
-          :line-dash="[0.5, 4]" />
-      </VlLayerGraticule>
-
-      <VlFeature>
-        <VlGeomPoint :coordinates="[0, 0]" />
-        <VlStyle>
-          <VlStyleCircle />
-          <VlStyleText text="qwerty">
-            <VlStyleFill
-              slot="background"
-              color="cyan" />
-          </VlStyleText>
-        </VlStyle>
-      </VlFeature>
     </VlMap>
   </div>
 </template>
